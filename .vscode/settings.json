@@ -1,0 +1,8 @@
+{
+    "editor.fontSize": 20,
+    "editor.fontFamily": "'Fira Code',Consolas, 'Courier New', monospace",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+    "editor.wordWrap": "on"
+    
+}
