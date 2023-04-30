@@ -7,19 +7,86 @@
     <title>Formuir</title>
 </head>
 <body>
-    <h1>Formulir Isian</h1>
-    <form action="#" method="post">
-        <label for="name">Nama Lengkap : </label>
-        <input type="text" placeholder="Nama" id="name">
-        <label for="email">Email : </label>
-        <input type="email" placeholder="Email" id="email">
-        <label for="pass">Password : </label>
-        <input type="password" placeholder="Password" id="pass">
-        <label for="phone">No Telepon : </label>
-        <input type="number" placeholder="Phone" id="phone">
-        <label for="color">Color : </label>
-        <input type="color" placeholder="color" id="color">
+    <form action="\daftar" method="post">
+        <table >
+            <thead>
+                <tr>
+                    <td colspan="2">
+                        <h1> <center><img src="https://th.bing.com/th/id/R.792fa9cef2743f5f9d10c87cd71340fe?rik=UgDYUMZ6W7nlaQ&riu=http%3a%2f%2fww1.prweb.com%2fprfiles%2f2017%2f10%2f24%2f14842335%2fBrainly.jpg&ehk=bI8N%2beU04GLKugJ95ciDlIwfW%2bg2y%2bworFRM6Bxh1hg%3d&risl=&pid=ImgRaw&r=0" alt="brainly" height="50"></center> </h1>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="name">Nama Lengkap</label></td>
+                    <td>: <input type="text" placeholder="Nama" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>: <input type="email" placeholder="Email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td>: <input type="password" placeholder="Password" name="passowrd" id="pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">No Telepon</label></td>
+                    <td>: <input type="number" placeholder="Phone" id="phone" name="phone"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><label for="gender">Jenis Kelamin</label></td>
+                    <td><input type="radio" name="gender" id="gender" value="Laki-laki"> <label for="gender">Laki-Laki</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" id="gender" value="Perempuan"> <label for="gender">Perempuan</label></td>
+                </tr>
+                <tr>
+                    <td rowspan="4"><label for="hobi">Hobi</label></td>
+                    <td><input type= "checkbox" name ="hobi" value="membaca">Membaca</td>
+                </tr>
+                <tr>
+                    <td><input type= "checkbox" name ="hobi" value="menulis">Menulis</td>
+                </tr>
+                <tr>
+                    <td><input type= "checkbox" name ="hobi" value="melukis">Melukis</td>
+                </tr>
+                <tr>
+                    <td><input type= "checkbox" name ="hobi" value="menari">Menari</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="" id="" value="Kirim">
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
     </form>
+    <hr>
+    <hr>
+    <h2>Pesanan</h2>
+    <form action="/order">
+        <label for="baju">Baju</label>
+        <div>
+            <input type="radio" name="baju" id="" value="kemeja" checked><label for="baju">Kemeja</label>
+            <input type="radio" name="baju" id=""><label for="baju" value = "kaos">Kaos</label>
+        </div>
+
+        <div>
+            <label for="ukuran">Ukuran</label>
+            <select name="ukuran" id="ukuran">
+                <option>-</option>
+                <option value="s">Small</option>
+                <option value="m" selected>Medium</option>
+                <option value="l">Large</option>      
+            </select>
+            <dir>
+                <input type="submit" name="" id="" value="Order">
+            </dir>
+        </div>
+        
+    </form>
+    
     
 </body>
 </html>
