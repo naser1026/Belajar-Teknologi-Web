@@ -1,0 +1,28 @@
+
+body {
+    background-color: gray;
+}
+h1, h2, h3 {
+    color: black;
+    background-color: darkgray;
+}
+button {
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+    margin: 5px 20px;
+}
+#makan {
+    color: blue;
+}
+#tidur {
+    color: white;
+}
+#minum {
+    color: purple;
+}
+.mark {
+    background-color: white;
+    
+}
