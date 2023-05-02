@@ -51,12 +51,18 @@
                     <td><input type= "checkbox" name ="hobi" value="melukis">Melukis</td>
                 </tr>
                 <tr>
-                    <td><input type= "checkbox" name ="hobi" value="menari">Menari</td>
+                    <td><input type= "checkbox" name ="hobi" value="menari" checked>Menari</td>
                 </tr>
                 <tr>
                     <td>
                         <input type="submit" name="" id="" value="Kirim">
                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="alamat">Alamat</label>
+                    </td>
+                    <td><textarea name="alamat" id="" cols="30" rows="7"></textarea></td>
                 </tr>
                 
             </tbody>
@@ -69,7 +75,7 @@
         <label for="baju">Baju</label>
         <div>
             <input type="radio" name="baju" id="" value="kemeja" checked><label for="baju">Kemeja</label>
-            <input type="radio" name="baju" id=""><label for="baju" value = "kaos">Kaos</label>
+            <input type="radio" name="baju" id="" value="kaos"><label for="baju" value = "kaos">Kaos</label>
         </div>
 
         <div>
@@ -80,13 +86,23 @@
                 <option value="m" selected>Medium</option>
                 <option value="l">Large</option>      
             </select>
-            <dir>
-                <input type="submit" name="" id="" value="Order">
-            </dir>
         </div>
-        
+        <div>
+            <label for="keterangan">Keterangan</label>
+            <br>
+            <textarea name="keterangan" id="" cols="30" rows="5" wrap="on" maxlength="20"></textarea>
+        </div>
+        <div>
+            <input type="submit" name="" id="" value="Order">
+        </div>
     </form>
-    
-    
+    <hr>
+    <h2>Validasi</h2>
+    <form action="/valid">
+        <input type="text" name="input" id="" required minlength="3" maxlength="5">
+        <input type="number" name="number" id="number" min="2" max="5">
+        <button type="subit">Kirim</button>
+
+    </form>
 </body>
 </html>
